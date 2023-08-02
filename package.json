@@ -8,9 +8,13 @@
     "jsonwebtoken": "^9.0.1"
   },
   "scripts": {
-    "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
-    "build": "set REACT_APP_ENV=production&& react-scripts build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "start:prod": "pushstate-server build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "server": "cd client/api && pm2 start server.js --watch",
+    "proxy": "http://128.199.139.144:3000"
   },
   "devDependencies": {
     "webpack-cli": "^5.1.4"
