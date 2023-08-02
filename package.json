@@ -10,7 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "start:prod": "pushstate-server build",
-    "build": "react-scripts build",
+    "build": "react-scripts --expose-gc --max-old-space-size=8192 build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "server": "cd client/backend && pm2 start server.js --watch"
