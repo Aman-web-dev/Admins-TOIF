@@ -9,7 +9,7 @@ const [info,setInfo]=useState([])
 const [loading,setLoading] = useState(true);
 const [from,setfromIndex]=useState(0);
 const [to,setToIndex]= useState(10);
-const [constituency,setConstituency]= useState("Ashti")
+const [constituency,setConstituency]= useState("All")
 const [search,setSearch]=useState("")
 const [loggedin,setLoggedin]=useState()
 

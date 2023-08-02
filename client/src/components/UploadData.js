@@ -39,6 +39,7 @@ function UploadData() {
   };
 
 
+  
 
   const handleSubmit = async(event) => {
     event.preventDefault();
@@ -64,6 +65,29 @@ console.log('this is the error ',result)
     } if (response.ok) {
     console.log("Fetched");
     console.log("Data added successfully");
+    setFormData({
+      Polling_Booth_Number: "",
+      Polling_Booth_Name: "",
+      Parent_Constituency: "",
+      Winner_2014: "",
+      Runner_up_other_than_INC_and_BJP: "",
+      Margin_Percentage_2014: "",
+      Margin_2014: "",
+      Total_Voters_2014: "",
+      BJP_Votes_2014: "",
+      BJP_Percentage_vote: "",
+      INC_Votes_2014: "",
+      INC_Percentage_votes: "",
+      Winner_2019: "",
+      Margin_Percentage_2019: "",
+      Margin_2019: "",
+      Total_Voters_2019: "",
+      BJP_Votes_2019: "",
+      BJP_Percentage_votes_2019: "",
+      INC_Votes_2019: "",
+      INC_Percentage_Votes_2019: "",
+    });
+
     }
 
   };
@@ -79,6 +103,9 @@ console.log('this is the error ',result)
             name="Polling_Booth_Number"
             value={formData.Polling_Booth_Number}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -89,6 +116,9 @@ console.log('this is the error ',result)
             name="Polling_Booth_Name"
             value={formData.Polling_Booth_Name}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -99,6 +129,9 @@ console.log('this is the error ',result)
             name="Parent_Constituency"
             value={formData.Parent_Constituency}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
 
@@ -110,6 +143,9 @@ console.log('this is the error ',result)
             name="Winner_2014"
             value={formData.Winner_2014}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -120,6 +156,9 @@ console.log('this is the error ',result)
             name="Runner_up_other_than_INC_and_BJP"
             value={formData.Runner_up_other_than_INC_and_BJP}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -130,6 +169,9 @@ console.log('this is the error ',result)
             name="Margin_Percentage_2014"
             value={formData.Margin_Percentage_2014}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -140,6 +182,9 @@ console.log('this is the error ',result)
             name="Margin_2014"
             value={formData.Margin_2014}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -150,6 +195,9 @@ console.log('this is the error ',result)
             name="Total_Voters_2014"
             value={formData.Total_Voters_2014}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -160,6 +208,9 @@ console.log('this is the error ',result)
             name="BJP_Votes_2014"
             value={formData.BJP_Votes_2014}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -170,6 +221,9 @@ console.log('this is the error ',result)
             name="BJP_Percentage_vote"
             value={formData.BJP_Percentage_vote}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -180,6 +234,9 @@ console.log('this is the error ',result)
             name="INC_Votes_2014"
             value={formData.INC_Votes_2014}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -190,6 +247,9 @@ console.log('this is the error ',result)
             name="INC_Percentage_votes"
             value={formData.INC_Percentage_votes}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -200,6 +260,9 @@ console.log('this is the error ',result)
             name="Winner_2019"
             value={formData.Winner_2019}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -210,6 +273,9 @@ console.log('this is the error ',result)
             name="Margin_Percentage_2019"
             value={formData.Margin_Percentage_2019}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -220,6 +286,9 @@ console.log('this is the error ',result)
             name="Margin_2019"
             value={formData.Margin_2019}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -230,6 +299,9 @@ console.log('this is the error ',result)
             name="Total_Voters_2019"
             value={formData.Total_Voters_2019}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -240,6 +312,9 @@ console.log('this is the error ',result)
             name="BJP_Votes_2019"
             value={formData.BJP_Votes_2019}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -250,6 +325,9 @@ console.log('this is the error ',result)
             name="BJP_Percentage_votes_2019"
             value={formData.BJP_Percentage_votes_2019}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -260,6 +338,9 @@ console.log('this is the error ',result)
             name="INC_Votes_2019"
             value={formData.INC_Votes_2019}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
         <div className="col-md-6">
@@ -270,6 +351,9 @@ console.log('this is the error ',result)
             name="INC_Percentage_Votes_2019"
             value={formData.INC_Percentage_Votes_2019}
             onChange={handleInputChange}
+
+
+  required 
           />
         </div>
 

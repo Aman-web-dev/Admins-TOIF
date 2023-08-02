@@ -20,6 +20,10 @@ router.get("/loaddata", async (req, res) => {
     query = { Parent_Constituency: filter };
   }
 
+  if(filter =="All"){
+    query={}
+  }
+
 
 
   try {
